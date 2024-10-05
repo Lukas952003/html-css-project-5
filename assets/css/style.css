@@ -469,3 +469,158 @@ a {
   font-weight: 400;
   line-height: 1.8;
 }
+
+/* Payments */
+.payments {
+  margin-top: 80px;
+  padding-top: 80px;
+}
+
+.payments__inner {
+  display: flex;
+}
+
+.payments__heading {
+  width: 470px;
+}
+
+.payments__left-desc {
+  margin-top: -50px;
+  width: 470px;
+  color: #696d76;
+  font-family: "Open Sans";
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.payment__list {
+  margin-top: 28px;
+  margin-bottom: 38px;
+  margin-left: 20px;
+}
+
+.payments__item {
+  position: relative;
+  color: var(--second-color);
+  font-family: "Open Sans";
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+.payments__item::before {
+  position: absolute;
+  left: -20px;
+  top: 8px;
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #7264d6;
+}
+
+.payments__btn {
+  margin-top: 20px;
+  padding: 15px 30px;
+}
+
+.payments__inner-right {
+  padding-top: 80px;
+  margin-left: 130px;
+  position: relative;
+}
+
+.payments__decor-01 {
+  position: absolute;
+  top: 30px;
+  right: -100px;
+  display: flex;
+  width: 276px;
+  height: 86px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.07);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.paymentS__decor-01-left {
+  display: flex;
+  align-items: center;
+}
+
+.payments__card {
+  display: inline-block;
+  width: 482px;
+  height: 322px;
+}
+
+.payments__decor-desc {
+  color: #212832;
+  font-family: Inter;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.payments__decor-desc-wrap {
+  color: #696d76;
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.payments__decor-01-right {
+  padding-right: 13px;
+}
+
+.payments__price {
+  color: var(--second-color);
+  text-align: right;
+  font-family: Inter;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.payments__month {
+  margin-top: 3px;
+  display: block;
+  color: #696d76;
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: right;
+}
+
+.payments__decor-02 {
+  position: absolute;
+  bottom: 0;
+  right: -80px;
+}
+
+.payments__decor-02-container {
+  width: 120px;
+  height: 120px;
+  border-radius: 16px;
+  background: #439f90;
+  padding: 15px;
+}
+
+.payments__decor-02-img {
+  margin-bottom: 14px;
+}
+
+.payments__decor-02-desc {
+  margin-bottom: 6px;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.paymetns__decor-02-price {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 1.8rem;
+  font-weight: 600;
+}

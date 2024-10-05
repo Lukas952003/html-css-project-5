@@ -159,11 +159,15 @@
             </p>
 
             <div class="hero__email">
-              <input
-                type="text"
-                class="hero__input"
-                placeholder="Your email address"
-              />
+              <form class="hero__form">
+                <input
+                  type="email"
+                  class="hero__input"
+                  placeholder="Your email address"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                  required
+                />
+              </form>
               <a href="#!" class="btn hero__button-email">Get Started</a>
             </div>
             <p class="hero__note">
@@ -290,6 +294,72 @@
                 </p>
               </div>
             </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- Payments -->
+      <section class="payments">
+        <div class="container">
+          <div class="payments__inner">
+            <section class="payments__inner-left">
+              <p class="work__right-desc hero__desc">Digital Smart Wallet</p>
+              <h3 class="work__right-heading payments__heading">
+                One Card For All Your Payments
+              </h3>
+              <p class="payments__left-desc">
+                We bring together eveything that’s required to build websites
+                and apps that accept payments and send payouts globally. We are
+                the best platform.
+              </p>
+              <ul class="payment__list">
+                <li class="payments__item">Global Payments</li>
+                <li class="payments__item">One-Click Purchase</li>
+                <li class="payments__item">Friendly Price</li>
+              </ul>
+              <a href="#!" class="btn payments__btn">Get Started</a>
+            </section>
+            <div class="payments__inner-right">
+              <img
+                src="./assets/img/payments-card.png"
+                alt=""
+                class="payments__card"
+              />
+              <div class="payments__decor-01">
+                <div class="paymentS__decor-01-left">
+                  <figure class="payments__decor-01-image">
+                    <img
+                      src="./assets/img/payments-plane.svg"
+                      alt=""
+                      class="payments__decor-01-img"
+                    />
+                  </figure>
+                  <div class="payments__decor-desc-container">
+                    <p class="payments__decor-desc">Send Money</p>
+                    <span class="payments__decor-desc-wrap"
+                      >Airbnb Payment</span
+                    >
+                  </div>
+                </div>
+                <div class="payments__decor-01-right">
+                  <p class="payments__price">- $600</p>
+                  <span class="payments__month">Sep 23</span>
+                </div>
+              </div>
+              <div class="payments__decor-02">
+                <div class="payments__decor-02-container">
+                  <img
+                    src="./assets/img/payments-money.svg"
+                    alt=""
+                    class="payments__decor-02-img"
+                  />
+                  <div class="payments__decor-02-content">
+                    <p class="payments__decor-02-desc">Income</p>
+                    <span class="paymetns__decor-02-price">$1250</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
