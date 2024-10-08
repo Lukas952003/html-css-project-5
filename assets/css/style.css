@@ -99,8 +99,9 @@ a {
   margin-top: 54px;
   z-index: 1000;
   padding: 16px 24px;
-  background-color: rgb(255 255 255 / 30%);
+  background-color: rgba(114, 100, 214, 0.1);
   backdrop-filter: blur(10px);
+  color: black;
 }
 
 .container__inner {
@@ -687,7 +688,7 @@ a {
 }
 
 .transfer__right {
-  margin-left: 300px;
+  margin-left: 270px;
 }
 
 .transfer__right-desc {
@@ -702,4 +703,152 @@ a {
 .transfer__btn {
   margin-top: 38px;
   /* line-height: ; */
+}
+
+/* Testimo */
+.testimo {
+  margin-top: 80px;
+  padding-top: 80px;
+}
+
+.testimo__header {
+  text-align: center;
+}
+
+.testimo__desc {
+  position: relative;
+  color: #696d77;
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.8;
+  /* margin-left: 30px; */
+}
+
+.testimo__desc::before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 2px;
+  background: #696d77;
+  top: 13px;
+  left: 500px;
+}
+
+.testimo__heading {
+  margin-top: 12px;
+  color: #212832;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.testimo__desc-bottom {
+  margin-top: 18px;
+  width: 435px;
+  color: #696d76;
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.8;
+  margin: 0 auto;
+}
+
+.testimo__list {
+  position: relative;
+  margin-top: 70px;
+  margin-left: -100px;
+  display: flex;
+  margin-left: -10px;
+}
+
+.testimo__item {
+  position: relative;
+  margin: 0px -40px;
+}
+
+.testimo__content {
+  position: absolute;
+  top: 70px;
+  left: 80px;
+  width: 514px;
+  color: #696d76;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 2.2rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.testimo__container-img {
+  position: relative;
+  width: 104px;
+  height: 104px;
+  border-radius: 52px;
+  background: #4ab5e3;
+  overflow: hidden;
+}
+
+.testimo__container-img-2 {
+  background-color: #439f90;
+}
+
+.testimo__img {
+  position: absolute;
+  bottom: -40px;
+  left: -4px;
+  width: 110.868px;
+  height: 178.566px;
+  object-fit: contain;
+}
+
+.testimo__info {
+  position: absolute;
+  bottom: -150px;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.testimo__name {
+  margin-top: 20px;
+  color: #070052;
+  font-family: "Open Sans";
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.testimo__job {
+  margin-top: 2px;
+  color: #696d76;
+  font-family: "Open Sans";
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.testimo__slider {
+  display: flex;
+  justify-content: center;
+  margin-top: 38px;
+  gap: 10px;
+}
+
+.testimo__slider-item {
+  margin-top: 150px;
+  width: 30px;
+  height: 6px;
+  background-color: #9b9fab;
+}
+
+.testimo__slider-item--active {
+  background-color: var(--primary-color);
 }
