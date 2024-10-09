@@ -643,6 +643,7 @@ a {
 .transfer__background {
   width: 470px;
   height: 432px;
+  user-select: none;
 }
 .transfer__people {
   position: absolute;
@@ -850,5 +851,104 @@ a {
 }
 
 .testimo__slider-item--active {
-  background-color: var(--primary-color);
+  background-color: var(--primary -color);
+}
+
+/* Blog */
+.blog {
+  margin-top: 80px;
+  padding-top: 80px;
+}
+
+.blog__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog__desc-bottom {
+  width: 435px;
+  font-size: 1.6rem;
+}
+
+.blog__header-right {
+  margin-top: 40px;
+}
+
+.blog__header-right-btn {
+  width: 123px;
+}
+
+.blog__list {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.blog__item {
+  display: flex;
+  align-items: center;
+
+  width: 570px;
+  border-radius: 12px;
+  border: 1px solid #dfe2e8;
+  background: #fff;
+  padding: 28px;
+  transition: all 0.3s ease-in-out;
+}
+
+.blog__item:hover {
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.07);
+  transform: translate(0px, -16px);
+  -webkit-transform: translate(0px, -16px);
+  -moz-transform: translate(0px, -16px);
+}
+
+.blog__item-img {
+  display: inline-block;
+  width: 160px;
+  height: 160px;
+}
+
+.blog__item-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 22px;
+}
+
+.blog__item-date {
+  margin-top: 10px;
+  color: #696d76;
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.blog__item-heading {
+  margin-top: 10px;
+  color: var(--second-color);
+  font-family: "Open Sans";
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.7;
+  width: 332px;
+  height: 60px;
+  -webkit-line-clamp: 2; /* Số dòng bạn muốn giới hạn */
+  visibility: visible; /* Tránh bug không giới hạn số dòng được do trình duyệt */
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.blog__item-button {
+  margin-top: 20px;
+  display: block;
+  color: var(--primary-color);
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6;
 }
