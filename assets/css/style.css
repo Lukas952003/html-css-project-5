@@ -851,7 +851,7 @@ a {
 }
 
 .testimo__slider-item--active {
-  background-color: var(--primary -color);
+  background-color: var(--primary-color);
 }
 
 /* Blog */
@@ -906,6 +906,11 @@ a {
   -moz-transform: translate(0px, -16px);
 }
 
+.blog__item-button:hover {
+  color: var(--second-color);
+  font-weight: bold;
+}
+
 .blog__item-img {
   display: inline-block;
   width: 160px;
@@ -951,4 +956,107 @@ a {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.6;
+  transition: all 0.35s ease-in-out;
+}
+
+/* APP */
+.app {
+  margin-top: 80px;
+  padding-top: 80px;
+}
+
+.app__inner-heading {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.app__inner {
+  position: relative;
+  background-color: var(--primary-color);
+  padding: 100px 0;
+  border-radius: 24px;
+}
+
+.app__inner-desc {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.app__inner-desc::before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 2px;
+  background: #fff;
+  top: 13px;
+  left: -27px;
+}
+
+.app__inner-heading {
+  margin-top: 12px;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.app__desc {
+  width: 435px;
+  margin-top: -62px;
+  color: #fff;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.app__download {
+  margin-top: 38px;
+  display: flex;
+  justify-content: center;
+}
+
+.app__download-link {
+  transition: all 0.35s ease-in-out;
+}
+
+.app__download-link:hover {
+  transform: scale(1.2);
+}
+
+.app__img {
+  margin-left: 23px;
+  width: 182px;
+  height: 64px;
+}
+
+.app__decor-01 {
+  position: absolute;
+  top: 55px;
+  left: 85px;
+}
+
+.app__decor-02 {
+  position: absolute;
+  top: 55px;
+  right: 85px;
+}
+
+.app__decor-03 {
+  position: absolute;
+  bottom: 55px;
+  left: 145px;
+}
+
+.app__decor-04 {
+  position: absolute;
+  bottom: 55px;
+  right: 145px;
 }
