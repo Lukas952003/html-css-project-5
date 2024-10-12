@@ -16,6 +16,10 @@
       rel="stylesheet"
     />
 
+    <!--Amination  -->
+    <link rel="stylesheet" href="./assets/animation/animate.css" />
+    <link rel="stylesheet" href="./assets/animation/aos.css" />
+
     <!-- Font awesome -->
     <link
       rel="stylesheet"
@@ -147,7 +151,7 @@
       <div class="container">
         <div class="hero__inner">
           <!-- hero left -->
-          <section class="hero__left">
+          <section class="hero__left animate__animated animate__fadeInLeft">
             <p class="hero__desc">Digital Smart Wallet</p>
             <h1 class="section__heading">
               Digital <span class="hero__highlight">Payment</span> For Everyone.
@@ -181,9 +185,11 @@
               <img
                 src="./assets/img/hero-mobile.png"
                 alt=""
-                class="hero__right-img"
+                class="hero__right-img animate__animated animate__bounceInDown"
               />
-              <div class="hero__right-decor-01">
+              <div
+                class="hero__right-decor-01 animate__animated animate__heartBeat"
+              >
                 <p class="hero__right-normal">
                   <span class="hero__right-bold">0%</span>Interest
                 </p>
@@ -197,7 +203,9 @@
                 <p class="hero__right-desc">Deposite</p>
                 <span class="hero__right-price">$32000</span>
               </div>
-              <div class="hero__right-decor-03">
+              <div
+                class="hero__right-decor-03 animate__animated animate__bounce"
+              >
                 <img
                   src="./assets/img/hero-decor-02.svg"
                   alt=""
@@ -220,7 +228,7 @@
         <div class="container">
           <div class="work__inner">
             <!-- left -->
-            <div class="work__left">
+            <div class="work__left" data-aos="zoom-out-up">
               <figure class="work__left-container">
                 <img
                   src="./assets/img/work-background.png"
@@ -240,7 +248,7 @@
                   />
                 </div>
               </figure>
-              <div class="work__left-congratulation">
+              <div class="work__left-congratulation" data-aos="flip-left">
                 <div class="work__left-check">
                   <img
                     src="./assets/img/check-solid.svg"
@@ -263,7 +271,11 @@
             <section class="work__right">
               <p class="work__right-desc hero__desc">Digital Smart Wallet</p>
               <h3 class="work__right-heading">How It Works</h3>
-              <div class="work__right-block">
+              <div
+                class="work__right-block"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
                 <p class="work__right-block-heading">
                   1. Open a High Interest Checking account
                 </p>
@@ -273,7 +285,11 @@
                 </p>
               </div>
 
-              <div class="work__right-block">
+              <div
+                class="work__right-block"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
                 <p class="work__right-block-heading">
                   2. 10 point-of-sale transactions each Month that are at least
                   $10 each.
@@ -284,7 +300,11 @@
                 </p>
               </div>
 
-              <div class="work__right-block">
+              <div
+                class="work__right-block"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
                 <p class="work__right-block-heading">
                   3. Receive up to 5.50% APY
                 </p>
@@ -302,7 +322,7 @@
       <section class="payments" id="features">
         <div class="container">
           <div class="payments__inner">
-            <section class="payments__inner-left">
+            <section class="payments__inner-left" data-aos="fade-up">
               <p class="work__right-desc hero__desc">Digital Smart Wallet</p>
               <h3 class="work__right-heading payments__heading">
                 One Card For All Your Payments
@@ -367,7 +387,7 @@
       <section class="transfer">
         <div class="container">
           <div class="transfer__inner">
-            <div class="transfer__left">
+            <div class="transfer__left" data-aos="fade-up">
               <img
                 src="./assets/img/transfer-bgc.png"
                 alt=""
@@ -460,7 +480,7 @@
       <section class="testimo">
         <div class="container">
           <div class="testimo__inner">
-            <section class="testimo__header">
+            <section class="testimo__header" data-aos="fade-up">
               <p class="testimo__desc">Our Testimonial</p>
               <h3 class="testimo__heading">What Clients Says</h3>
               <p class="testimo__desc-bottom">
@@ -470,7 +490,7 @@
             </section>
             <div class="testimo__list">
               <!-- Item 1 -->
-              <div class="testimo__item">
+              <div class="testimo__item" data-aos="fade-down">
                 <img
                   src="./assets/img/testimo-bacground.svg"
                   alt=""
@@ -496,7 +516,7 @@
               </div>
 
               <!-- Item 2 -->
-              <div class="testimo__item">
+              <div class="testimo__item" data-aos="fade-down">
                 <img
                   src="./assets/img/testimo-bacground.svg"
                   alt=""
@@ -784,8 +804,15 @@
       <div class="footer__copyright">
         <p class="footer__copyright-desc">
           © 2020 Ligft Media All rights reserved.
+          <span style="color: rgb(0, 255, 51); font-weight: bold"
+            >Practice Code by: Võ Thiện Nhân</span
+          >
         </p>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

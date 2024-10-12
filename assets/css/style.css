@@ -44,7 +44,7 @@ li {
 
 a {
   text-decoration: none;
-  color: #070052;
+  color: #fff;
 }
 
 .container {
@@ -57,7 +57,7 @@ a {
   width: 149px;
   height: 58px;
   border-radius: 6px;
-  background: var(--second-color);
+  background: var(--primary-color);
   padding: 12px 28px;
 }
 
@@ -1038,24 +1038,40 @@ a {
   position: absolute;
   top: 55px;
   left: 85px;
+  animation-name: spinner;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.85, 0.82, 0.165, 1);
 }
 
 .app__decor-02 {
   position: absolute;
   top: 55px;
   right: 85px;
+  animation-name: spinner;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.85, 0.82, 0.165, 1);
 }
 
 .app__decor-03 {
   position: absolute;
   bottom: 55px;
   left: 145px;
+  animation-name: spinner;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.85, 0.82, 0.165, 1);
 }
 
 .app__decor-04 {
   position: absolute;
   bottom: 55px;
   right: 145px;
+  animation-name: spinner;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.85, 0.82, 0.165, 1);
 }
 
 /* Footer */
@@ -1162,4 +1178,13 @@ a {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.8;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
