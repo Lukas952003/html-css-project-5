@@ -109,12 +109,26 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
   <body>
     <!-- Header -->
     <header class="header">
       <div class="container">
         <div class="container__inner">
+          <!-- menu tablet/ mobile -->
+          <label for="header__button" class="label-menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              class="menu__tablet-mobile"
+            >
+              <path
+                d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+                fill="currentColor"
+              />
+            </svg>
+          </label>
           <img src="./assets/img/Logo.svg" alt="Logo" class="logo" />
 
           <!-- Navbar -->
@@ -143,11 +157,55 @@
             <a href="#!" class="btn nav__signup">Sign up</a>
           </div>
         </div>
+        <marquee style="padding-top: 15px; color: black; padding-bottom: 5px"
+          ><span style="font-weight: bold">Lưu ý:</span> Đây chỉ là website được
+          code bằng HTML5 CSS3 thuần, không sử dụng thư viện, việc code ra trang
+          web Landing Page này chỉ để luyện tập kỹ năng về HTML5 và CSS3 không
+          có chức năng!
+        </marquee>
       </div>
     </header>
 
+    <!-- Header for tablet/ mobile -->
+    <header class="header_mbtab">
+      <input
+        type="checkbox"
+        id="header__button"
+        class="header__button"
+        hidden
+      />
+      <label for="header__button" class="header__overlay"></label>
+      <!-- header content -->
+      <div class="header__drawer">
+        <!-- Navbar -->
+        <nav class="navbar-mbtab">
+          <img src="./assets/img/Logo.svg" alt="Logo" class="logo" />
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__item-link nav__item-link--active"
+                >Home</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#product" class="nav__item-link">Products</a>
+            </li>
+            <li class="nav__item">
+              <a href="#features" class="nav__item-link">Features</a>
+            </li>
+            <li class="nav__item">
+              <a href="#!" class="nav__item-link">Blog</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Nav button -->
+        <div class="nav__button-tabmb">
+          <a href="#!" class="nav__loggin">Log in</a>
+          <a href="#!" class="btn nav__signup">Sign up</a>
+        </div>
+      </div>
+    </header>
     <!-- Hero -->
-    <section class="hero" id="home">
+    <section class="hero" id="home" style="height: 3000px">
       <div class="container">
         <div class="hero__inner">
           <!-- hero left -->
@@ -224,7 +282,7 @@
 
     <main>
       <!-- How it works -->
-      <section class="work" id="product">
+      <section class="work" id="product" style="display: none">
         <div class="container">
           <div class="work__inner">
             <!-- left -->
@@ -319,7 +377,7 @@
       </section>
 
       <!-- Payments -->
-      <section class="payments" id="features">
+      <section class="payments" id="features" style="display: none">
         <div class="container">
           <div class="payments__inner">
             <section class="payments__inner-left" data-aos="fade-up">
@@ -384,7 +442,7 @@
         </div>
       </section>
       <!-- Transfer -->
-      <section class="transfer">
+      <section class="transfer" style="display: none">
         <div class="container">
           <div class="transfer__inner">
             <div class="transfer__left" data-aos="fade-up">
@@ -477,7 +535,7 @@
       </section>
 
       <!-- Testimo -->
-      <section class="testimo">
+      <section class="testimo" style="display: none">
         <div class="container">
           <div class="testimo__inner">
             <section class="testimo__header" data-aos="fade-up">
@@ -555,7 +613,7 @@
       </section>
 
       <!-- Our blog -->
-      <section class="blog">
+      <section class="blog" style="display: none">
         <div class="container">
           <div class="blog__inner">
             <section class="blog__header">
@@ -646,7 +704,7 @@
       </section>
 
       <!-- Our App -->
-      <section class="app">
+      <section class="app" style="display: none">
         <div class="container">
           <div class="app__inner">
             <section class="app__inner-heading">
@@ -696,7 +754,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" style="display: none">
       <div class="container">
         <div class="footer__inner">
           <div class="footer__item">
@@ -765,7 +823,7 @@
               >
                 News letter
               </li>
-              <li class="footer__list-menu-item">
+              <div class="footer__list-menu-item-ip">
                 <form action="" class="footer-input">
                   <input
                     type="email"
@@ -778,7 +836,7 @@
                     <a href="#!" class="footer__btn">Subscribe</a>
                   </div>
                 </form>
-              </li>
+              </div>
             </ul>
           </div>
 
