@@ -129,11 +129,12 @@
 
   .work__inner {
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
   }
 
   .work__left {
     margin-top: -100px;
+    align-self: center;
   }
 
   .work__right {
@@ -142,6 +143,26 @@
 
   .work__left-container {
     margin-bottom: 30px;
+  }
+
+  .payments__inner {
+    flex-direction: column;
+  }
+
+  .payments__inner-right {
+    margin-left: 0;
+  }
+
+  .payments__inner-right {
+    align-self: center;
+  }
+
+  .payments__decor-01 {
+    right: -70px;
+  }
+
+  .payments {
+    margin-top: 0;
   }
 
   /* Tablet-mobile */
@@ -207,6 +228,22 @@
   }
 
   .work__left {
+    scale: 0.75;
+  }
+
+  .payments__card {
     scale: 0.8;
+  }
+
+  .work__left-congratulation {
+    right: -50px;
+  }
+
+  .payments__decor-01 {
+    right: -10px;
+  }
+
+  .payments__decor-02 {
+    right: 0;
   }
 }
