@@ -187,6 +187,18 @@
     top: -40px;
   }
 
+  .testimo__list {
+    display: flex;
+    /* flex-direction: column */
+    justify-content: center;
+    scale: 0.6;
+    gap: 10px;
+    margin-top: 0;
+  }
+
+  .testimo__slider {
+    margin-top: -50px;
+  }
   /* Tablet-mobile */
 }
 
@@ -281,5 +293,34 @@
 
   .transfer__payments-container {
     right: -55px;
+  }
+
+  .testimo {
+    padding-left: 50px;
+  }
+
+  .testimo__heading {
+    width: 370px;
+  }
+
+  .testimo__item {
+    scale: 1.2;
+    /* margin-left: 80px; */
+  }
+
+  .testimo__slider {
+    /* margin-left: 80px; */
+  }
+
+  .testimo__item:last-child {
+    display: none;
+  }
+
+  .testimo__desc::before {
+    left: 70px;
+  }
+
+  .testimo__desc-bottom {
+    max-width: 350px;
   }
 }
