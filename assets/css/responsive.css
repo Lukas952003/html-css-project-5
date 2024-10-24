@@ -199,6 +199,33 @@
   .testimo__slider {
     margin-top: -50px;
   }
+
+  .blog__header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blog__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .blog__item {
+    flex-grow: 1;
+    flex-basis: 150px;
+    width: auto;
+    padding: 24px;
+  }
+
+  .blog__item-content {
+    min-width: 200px;
+  }
+
+  .blog__item-heading {
+    width: min(350px, 100%);
+  }
+
   /* Tablet-mobile */
 }
 
@@ -299,7 +326,7 @@
     padding-left: 50px;
   }
 
-  .testimo__heading {
+  .testimo__header {
     width: 370px;
   }
 
