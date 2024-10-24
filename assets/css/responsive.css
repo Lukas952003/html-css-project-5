@@ -165,6 +165,28 @@
     margin-top: 0;
   }
 
+  .transfer__inner {
+    flex-direction: column;
+  }
+
+  .transfer__payments-container {
+    right: -95px;
+  }
+
+  .transfer__left {
+    align-self: center;
+  }
+
+  .transfer__right {
+    margin-top: 150px;
+    margin-left: 0px;
+  }
+
+  .transfer__payments-money {
+    right: -100px;
+    top: -40px;
+  }
+
   /* Tablet-mobile */
 }
 
@@ -176,6 +198,10 @@
 @media screen and (max-width: 767.98px) {
   .nav__button {
     display: none;
+  }
+
+  .label-menu {
+    margin-right: 20%;
   }
 
   .hero__right-img {
@@ -241,9 +267,19 @@
 
   .payments__decor-01 {
     right: -10px;
+    top: 75px;
   }
 
   .payments__decor-02 {
     right: 0;
+  }
+
+  .transfer__left {
+    margin-top: -100px;
+    scale: 0.8;
+  }
+
+  .transfer__payments-container {
+    right: -55px;
   }
 }
