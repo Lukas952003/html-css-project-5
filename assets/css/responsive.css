@@ -127,6 +127,23 @@
     right: -23px;
   }
 
+  .work__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work__left {
+    margin-top: -100px;
+  }
+
+  .work__right {
+    margin-left: 0;
+  }
+
+  .work__left-container {
+    margin-bottom: 30px;
+  }
+
   /* Tablet-mobile */
 }
 
@@ -182,6 +199,14 @@
   .hero__right-decor-03 {
     bottom: -62px;
     left: -150px;
+    scale: 0.8;
+  }
+
+  .work__inner {
+    align-items: normal;
+  }
+
+  .work__left {
     scale: 0.8;
   }
 }
