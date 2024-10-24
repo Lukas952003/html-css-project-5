@@ -226,6 +226,40 @@
     width: min(350px, 100%);
   }
 
+  .app__decor-01 {
+    top: 0;
+    left: 0;
+  }
+
+  .app__decor-02 {
+    top: 0;
+    right: 0;
+  }
+
+  .app__decor-03 {
+    bottom: 0;
+    left: 0;
+  }
+
+  .app__decor-04 {
+    bottom: 0;
+    right: 0;
+  }
+
+  .footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer__list-menu-item {
+    margin-top: 10px;
+  }
+
+  .footer__list-menu-item,
+  .footer__desc {
+    width: 300px;
+  }
+
   /* Tablet-mobile */
 }
 
@@ -349,5 +383,25 @@
 
   .testimo__desc-bottom {
     max-width: 350px;
+  }
+
+  .app__inner {
+    margin-left: 10px;
+    width: 100vw;
+  }
+
+  .app__download {
+    margin-left: -20px;
+  }
+
+  .app__decor-03,
+  .app__decor-04 {
+    display: none;
+  }
+
+  .footer__copyright {
+    width: 100vw;
+    margin-left: 30px;
+    width: 100%;
   }
 }
